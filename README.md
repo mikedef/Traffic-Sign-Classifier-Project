@@ -25,4 +25,6 @@ I was able to also view the sign labels after reading in the signnames.csv with 
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the images are distributed across the 43 classes. 
 
-![png][writeup/ClassHist.png]
+![png](writeup/ClassHist.png)
+
+The distribution is far from perfect. With some classes having >2000 images and others having <250 images to train, validate and test on. This is far from ideal when training data. Further exploration of this problem might include creating modified images of the classes that are lower in number to help increase the data to work with. 
