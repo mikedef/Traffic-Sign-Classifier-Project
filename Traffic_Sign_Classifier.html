@@ -15115,19 +15115,8 @@ Xgc6AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Project-Writeup">Project Writeup<a class="anchor-link" href="#Project-Writeup">&#182;</a></h3><p>Once you have completed the code implementation, document your results in a project writeup using this <a href="https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup_template.md">template</a> as a guide. The writeup can be in a markdown or pdf file.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Note</strong>: Once you have completed all of the code implementations and successfully answered each question above, you may finalize your work by exporting the iPython Notebook as an HTML document. You can do this by using the menu above and navigating to  \n",
-    "<strong>File -&gt; Download as -&gt; HTML (.html)</strong>. Include the finished document along with this notebook as your submission.</p>
-</blockquote>
+<h3 id="New-Image-Discussion">New Image Discussion<a class="anchor-link" href="#New-Image-Discussion">&#182;</a></h3><p>The new images for testing as shown above were evaluated with a prediction accuracy of 50%. There are a few problem with the predictions on these images. The problems may arise due to the image quality. Another issue that I see is that some of the signs are not straight in the image. out of the three incorrectly classified images the correct classification is within the top five probabilities in two of the misclassified images. In the last image the classifier does not even classify within the top five probabilities.</p>
+<p>I think that increasing the amount of test images will help with the predictions. In particular I think that using the same images, but modifying the images such that they are distorted, blurred, and off axis will help with these misclassifications in particular.</p>
 
 </div>
 </div>
@@ -15186,6 +15175,19 @@ Xgc6AAAAAElFTkSuQmCC
             <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">activation</span><span class="p">[</span><span class="mi">0</span><span class="p">,:,:,</span> <span class="n">featuremap</span><span class="p">],</span> <span class="n">interpolation</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">activation_min</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">activation</span><span class="p">[</span><span class="mi">0</span><span class="p">,:,:,</span> <span class="n">featuremap</span><span class="p">],</span> <span class="n">interpolation</span><span class="o">=</span><span class="s2">&quot;nearest&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
 </div>
